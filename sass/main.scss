@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./base/all";
+
+@import "./components/titre";
+@import "./components/liens";
+@import "./components/ancres";
+
+@import "./layouts/nav";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/accueil";
+@import "./pages/prestation";
+@import "./pages/logement";
+@import "./pages/animation";
+@import "./pages/equipe";
+@import "./pages/contact";
+

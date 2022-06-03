@@ -1,0 +1,13 @@
+{
+  "name": "marpa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/prefix/styles.css --style compressed",
+    "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefix/",
+    "pug": ""
+  },
+  "author": "",
+  "license": "ISC"
+}

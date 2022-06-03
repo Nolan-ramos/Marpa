@@ -1,0 +1,12 @@
+.titre_stroke_header{
+	-webkit-text-stroke: 1px $black;
+	color: transparent;
+	display: inline-block;
+	position: relative;
+}
+@supports (-webkit-text-stroke: 1px $white) {
+	.titre_stroke_header{
+		-webkit-text-stroke: 1px $black;
+		color: transparent;
+	}
+}

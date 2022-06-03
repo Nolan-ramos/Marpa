@@ -1,0 +1,106 @@
+.section_presta{
+    padding:0;
+}
+.footer_presta{
+    margin-top: 0;
+}
+.nav_pres_presta{
+    position: relative;
+    display: flex;
+    margin-top:100px;
+    .nav_presta{
+        width:25vw;
+        position: sticky;
+        top:0;
+        left:0;
+        height:100vh;
+        background: $primary;
+        padding:75px 60px 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        a{
+            display: block;
+            color:$white;
+            padding:0.25em 0;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            font-weight:700;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color:$secondary;
+            }
+        }
+        .active{
+            color:$secondary;
+        }
+    }
+    .pres_presta{
+        width:75vw;
+        .presta{
+            .txt_pres_presta{
+                padding:100px 60px 100px 100px;
+                h2{
+                    padding:0em 0 1em 0;
+                    font-weight: 700;
+                }
+                h3{
+                    padding:0em 0 0.5em 0;
+                    font-style: italic;
+                    color:$primary;
+                }
+                img{
+                    margin-top: 50px;
+                }
+            }
+            .separateur_presta{
+                height:125px;
+                background: $primary;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .nav_pres_presta .nav_presta{
+        width:35vw;
+    }
+    .pres_presta{
+        width:65vw;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .nav_pres_presta{
+        position: relative;
+        margin-top:0px;
+        .nav_presta{
+            display:none;
+        }
+        .pres_presta{
+            width:100%;
+            .presta{
+                .txt_pres_presta{
+                    padding:50px 40px;
+                }
+                .separateur_presta{
+                    height:75px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .titre_prestations{
+        padding:0 20px;
+    }
+    .nav_pres_presta{
+        .pres_presta{
+            .presta{
+                .txt_pres_presta{
+                    padding:50px 20px;
+                }
+            }
+        }
+    }
+}

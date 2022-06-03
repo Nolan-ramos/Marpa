@@ -1,0 +1,57 @@
+.pres_equipe{
+    display: flex;
+    flex-direction: row;
+    margin-top:100px;
+    .texte_pres_equipe{
+        flex-grow: 1;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:nth-child(1){
+            padding-right:50px;
+        }
+        &:nth-child(2){
+            padding-left:50px;
+        }
+        h3{
+            padding:0 0 0.5em 0;
+            font-style: italic;
+            color:$primary;
+        }
+    }
+    .image_pres_equipe{
+        flex-grow: 1;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pres_equipe{
+        flex-direction: column;
+        margin-top:50px;
+        .texte_pres_equipe{
+            h3{
+                padding:0em 0 0.5em 0;
+                font-style: italic;
+                color:$primary;
+            }
+            &:nth-child(1){
+                padding-right:0;
+            }
+            &:nth-child(2){
+                padding-left:0;
+            }
+        }
+        .image_pres_equipe{
+            order:1;
+        }
+    }
+}
